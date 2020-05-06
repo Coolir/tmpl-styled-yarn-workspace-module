@@ -8,6 +8,7 @@ module.exports = (api) => {
       '@babel/proposal-object-rest-spread',
       '@babel/proposal-class-properties',
       '@babel/proposal-export-default-from',
+      'babel-plugin-styled-components',
       'macros'
     ],
     presets: useESModules ? ['@babel/react'] : ['@babel/env', '@babel/react']
