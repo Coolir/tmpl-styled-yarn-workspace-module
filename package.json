@@ -27,7 +27,10 @@
     "build:module": "MODULE=true babel src --out-dir module --delete-dir-on-start",
     "build": "npm run build:module && npm run build:main",
     "prepare": "npm run build",
-    "lint": "eslint src --fix",
+    "lint": "npm run lint:js && npm run lint:style",
+    "lint:js": "eslint src --ext .js",
+    "lint:fix": "eslint src --fix",
+    "lint:style": "stylelint src/**/*.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:debug": "node --inspect node_modules/.bin/jest --runInBand"
