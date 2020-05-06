@@ -30,7 +30,7 @@
     "lint": "npm run lint:js && npm run lint:style",
     "lint:js": "eslint src --ext .js",
     "lint:fix": "eslint src --fix",
-    "lint:style": "stylelint src/**/*.js",
+    "lint:style": "stylelint 'src/**/*.js'",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:debug": "node --inspect node_modules/.bin/jest --runInBand"
